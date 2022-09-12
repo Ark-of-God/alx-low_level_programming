@@ -3,6 +3,8 @@
 /**
  * main - Entry point
  *
+ * Description: "proper grammer"
+ *
  * Return: Always 0 (Success)
  */
 int main(void)
