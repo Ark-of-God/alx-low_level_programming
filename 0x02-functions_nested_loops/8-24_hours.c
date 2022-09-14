@@ -1,14 +1,14 @@
 #include "main.h"
-/** 
+/**
  * jack_bauer - print time table in this format: HH:MM
  * Return: the sum of two numbers
  */
 void jack_bauer(void)
 {
 	int hours = 0;
-       int minutes = 0;
-       int hours_remainder;
-       int mins_remainder;
+	int minutes = 0;
+	int hours_remainder;
+	int mins_remainder;
 
 	while (hours <= 23)
 	{
@@ -25,6 +25,6 @@ void jack_bauer(void)
 	_putchar('\n');
 	}
 	hours++;
-	minutes = 0;
+	minute = 0;
 }
 }
