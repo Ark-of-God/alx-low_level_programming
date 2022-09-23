@@ -1,32 +1,25 @@
 #include "main.h"
+#include <stdio.h>
 
 /**
- * cap_string - capitalize all words in a string
- * @s: string to capitalize
+ * *cap_string - this is awesome
+ * @s: pointer to char params
  *
- * Return: address of s
+ * Return: *s
  */
+
 char *cap_string(char *s)
 {
-	int i = 0, j;
-	char a[] = " \t\n,;.!.?\"(){}";
+	int i, j;
+	char delimeters[] = " \t\n,;.!?\"(){}";
 
-	while (*(s + i))
+	for (i = 0; s[i] != '\0'; i++)
 	{
-		if (*(s + i) >= 'a' && *(s + i) <= 'z')
-		{
-			if (i == 0)
-				*(s + i) -= 'a' - 'A';
-			else
-			{
-				for (j = 0; j <= 12; j++)
-				{
-					if (a[j] == *(s + i - 1))
-						*(s + i) -= 'a' - 'A';
-				}
-			}
-		}
-		i++;
+		if (s[0] >= 97 && s[0] <= 122)
+			s[0] = s[0] - 32;
+				for (j = 0; delimeters[j] != '\0'; j++)
+					if (s[i] == delimeters[j] && s[i + 1] >= 97 && s[i + 1] <= 122)
+						s[i + 1] = s[i + 1] - 32;
 	}
 	return (s);
 }
