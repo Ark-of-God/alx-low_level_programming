@@ -1,11 +1,12 @@
 #include "main.h"
 
 /**
- * leet -encodes string into 1337
+ * leet - encode
  * @s: string to encode
  *
- * Return: address to s
+ * Return: *s
  */
+
 char *leet(char *s)
 {
 	int i;
